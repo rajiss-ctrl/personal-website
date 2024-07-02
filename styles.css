@@ -31,7 +31,7 @@ header nav {
     z-index: 150;
     left: 0;
     top: 0;
-    padding: 0.3rem 1.2rem;
+    padding: 0.8rem 1.2rem;
     background: rgb(38, 34, 80,0.8);
     color: #FFFFFF;
     box-shadow: 8px 8px 16px rgb(38, 34, 80,0.8), -8px -8px 16px #ffffff;
@@ -96,15 +96,7 @@ header nav .nav-item ul li {
     height: 100px;
     border-radius: 50%;
 }
-/* .profile .box img.image-desktop{
-    max-width: 100%;
-    border-radius: 50%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-.profile img.image-mobile{
-    display: none;
-} */
+
 
 .profile .user-name-email{
     line-height: 1.5;
@@ -117,23 +109,13 @@ header nav .nav-item ul li {
     color: #000000;
 }
 
-/* .profile h1 {
-    padding-bottom: 2rem;
-    line-height: 1.2;
-    font-size: 1.5rem;
-    font-weight: 50;
-    color: #211b1b;
-    text-align: center;
-} */
 .profile .gif{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #262250;
 }
-/* .profile .gif img{
-    width: 20%;
-} */
+
 main {
     padding:10rem 20px 20px 20px;
 }
@@ -160,7 +142,6 @@ main section {
 main section ul {
     margin-top: 50px;
     width: 80%;
-
 }
 main section ul li {
     background-color: #f4f4f4;
@@ -176,16 +157,14 @@ main section ul li {
     color: #262250;
     margin-top: 10px;
 }
-/* ul li a img{
-    width: 40%;
-    border-radius: 4px;
-} */
+
 
 div a {
     margin-right: 10px;
 }
 
 .cards {
+    margin-top: 40px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -193,6 +172,7 @@ div a {
 }
 
 .card {
+    margin-top: 40px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -272,26 +252,24 @@ p[data-testid="currentTimeUTC"] span {
 
 @media screen and (max-width: 600px) {
     header{
-        height: 400px;
+        height: 250px;
     }
     .profile{
         width: 90%;
+        bottom: -10rem;
+        
     }
     .profile .box{
-        top: 0;
+        top: 20px;
     }
-    /* .profile img.image-desktop{
-        display: none;
-    } */
-    /* .profile img.image-mobile{
-        max-width: 100%;
-        border-radius: 50%;
-        height: auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    } */
+   
     .profile .box {
         max-width: 100px;
     }
+    .profile .user-name-email{
+        padding-top:3rem ;
+    }
+
     /* Add a hidden class to manage the display of .nav-item */
     .hidden {
         display: none !important;
@@ -323,16 +301,23 @@ p[data-testid="currentTimeUTC"] span {
         font-size: 1.5em;
     }
 
-    header nav .nav-item ul {
-        
+    header nav .nav-item ul { 
         flex-direction: column;
         align-items: start;
-        gap: 0;
-        background: #1c3744;
+        
+        /* background: #1c3744; */
         width: 100%;
     }
 
     header nav .nav-item ul li {
         padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    main {
+        padding:13rem 20px 20px 20px;
+    }
+    main section ul {
+        width: 100%;
     }
 }
