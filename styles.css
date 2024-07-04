@@ -65,7 +65,7 @@ header nav .nav-item ul li {
     border: none;
 }
 
-.title p{
+.title{
     margin-top:-3.5rem;
     font-style: italic;
 }
@@ -258,9 +258,8 @@ p[data-testid="currentTimeUTC"] span {
     header{
         height: 300px;
     }
-    .title{
-        margin-top:2rem;
-        }
+    .title p{
+       margin-top: 1rem;
     }
     .profile{
         width: 90%;
